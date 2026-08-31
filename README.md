@@ -1,4 +1,4 @@
-# AI in Power Electronics — Predictive Maintenance & Prognostics
+# AI in Power Electronics - Predictive Maintenance & Prognostics
 
 Application of **Machine Learning and data-driven prognostics** for health monitoring and Remaining Useful Life (RUL) prediction of critical power-electronic components.
 
@@ -30,7 +30,7 @@ Together, the projects explore the pipeline:
 
 ---
 
-# Project 1 — Power MOSFET SoH & RUL Prediction
+# Project 1 - Power MOSFET SoH & RUL Prediction
 
 ## Objective
 
@@ -51,8 +51,8 @@ Degradation data was obtained from **Accelerated Life Tests (ALT)** performed on
 
 During repeated power cycles, the following signals were recorded:
 
-- Drain-source voltage — `VDS(t)`
-- Drain current — `ID(t)`
+- Drain-source voltage - `VDS(t)`
+- Drain current - `ID(t)`
 - Device temperature
 - Cycle index / timestamp
 
@@ -64,9 +64,9 @@ The repeated heating and cooling cycles accelerate ageing mechanisms such as:
 
 ---
 
-## Health Indicator — RDS(on)
+## Health Indicator - RDS(on)
 
-The primary degradation indicator used was **On-State Resistance — RDS(on)**:
+The primary degradation indicator used was **On-State Resistance - RDS(on)**:
 
 `RDS(on) = VDS / ID`
 
@@ -113,7 +113,7 @@ These features were used to represent degradation patterns for the ML models.
 
 A two-stage ML architecture was developed.
 
-### Stage 1 — State-of-Health Classification
+### Stage 1 - State-of-Health Classification
 
 A **Random Forest Classifier** predicts:
 
@@ -122,7 +122,7 @@ A **Random Forest Classifier** predicts:
 
 Random Forest was selected for its robustness to noisy and high-dimensional degradation data.
 
-### Stage 2 — Remaining Useful Life Prediction
+### Stage 2 - Remaining Useful Life Prediction
 
 Once the MOSFET enters the pre-failure state, a **Bayesian Ridge Regressor (BRR)** models the degradation trajectory and predicts the remaining lifetime.
 
@@ -142,7 +142,7 @@ The results showed that linear Bayesian Ridge Regression produced more stable RU
 
 ---
 
-# Project 2 — Capacitor Prognostics & ML-Based RUL Prediction
+# Project 2 - Capacitor Prognostics & ML-Based RUL Prediction
 
 ## Objective
 
@@ -174,9 +174,9 @@ The dataset contains repeated EIS and transient measurements from capacitors sub
 Important parameters include:
 
 - Frequency
-- Real Impedance — Re(Z)
-- Imaginary Impedance — Im(Z)
-- Impedance Magnitude — |Z|
+- Real Impedance - Re(Z)
+- Imaginary Impedance - Im(Z)
+- Impedance Magnitude - |Z|
 - Phase
 - Voltage
 - Current
@@ -386,4 +386,4 @@ AI-in-Power-Electronics/
 **Arpit Jain**  
 Indian Institute of Technology Bombay (IIT Bombay)
 
-**Supervised Learning Projects — AI in Power Electronics**
+**Supervised Learning Projects - AI in Power Electronics**
